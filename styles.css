@@ -1,0 +1,721 @@
+*{
+    margin: 0;
+}
+html, body{
+    height: 100%;
+}
+
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color:gray;
+    }
+
+p{
+    margin: 0.5em 0 0.5em 0;
+}
+
+header{
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /*background-image: url("images/fondo3.jpg");*/
+    padding: 20px 0 20px 0;
+    text-align:center;
+    font-size: 1em;
+    background-color: rgb(31, 30, 30);
+    
+}
+
+nav a:visited,
+
+nav a:link{
+    color: white;
+    text-decoration: none;
+}
+
+nav>ul{
+    display: inline;
+    padding: 0;
+}
+
+nav>ul>li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 5px 0 5px;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:visited{
+color: black;
+}
+
+.mensajeinicial{
+    display: block;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.banner{
+   display: inline-block;
+ 
+   
+}
+
+.banner img{
+    margin: auto;
+}
+
+.contacto{
+    display: inline-block;
+    height: 300px;
+    background-image: url("images/fondo3.jpg");
+}
+
+main {
+display: block;
+/*background-image: url("images/fondo3.jpg");*/
+padding-top: 8em;
+padding-bottom: 3em;
+text-align: center;
+width: 100%;
+height: 75%;
+margin: auto;
+}
+
+footer{
+    display: block;
+    /*background-image: url("images/fondo3.jpg");*/
+    padding: 3em;
+    text-align: center;
+    font-size: 1em;
+    background-color: rgb(31, 30, 30);
+}
+
+article{
+    padding: 2em;
+    /*align-content: center;*/
+    width: 100%;
+    padding: 0%;
+    margin: auto;
+    display: flex;
+    
+    }
+
+.empanadas_article{
+    flex-direction: column;
+    
+}
+    
+
+aside{
+   display:inline-block;
+  /*/ margin: auto 0;   */
+  margin-top: 60px;
+   width: 500px;
+ 
+}
+
+aside img{
+    object-fit: scale-down;
+}
+
+@media only screen and (min-width: 768px) {
+    main {
+        display: flex;
+        padding: 50px;
+        height: 100%;
+    }
+   
+    .columns-desktop{
+        display: flex;
+        justify-content: center;
+        
+    }
+    .columns-desktop2{
+        display: flex;
+        justify-content: center;
+        
+    }
+    .columns-desktop3{
+        display: flex;
+        justify-content: center;
+    }
+
+    .Docenas p{
+    font-weight: bold;
+    }
+}
+
+.logo{
+    max-width: 50%;
+}
+
+h1 {
+    font-size: 3em;
+    margin-top: 0,5em;
+     
+}
+
+.sub-title{
+    background-color:gray;
+    width: 1000px;
+    font-size: 1.5em;
+    padding: 10px;
+    border: solid 2px;
+}
+
+/* Catalogo */
+
+/* Carne Picante */
+.carnepicante{
+    width: 250px;
+    height: 250px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color:white;
+    border: solid 1px;
+}
+
+.carnepicante img{
+width: 100%;
+height: 65%;
+object-fit:cover ;
+}
+
+.carnepicante .title{
+font-weight: bold;
+}
+
+.carnepicante .price{
+    text-align: right;
+}
+
+.carnepicante .columns {
+    max-width: 100%;
+    display: flex;
+}
+.carnepicante .columns div{
+    width: 50%;
+}
+
+.carnepicante button{
+    background-color:white;
+    padding: 10px;
+    border: solid 1px;
+    border-radius: 5px;
+    font-weight:bold;
+
+}
+
+/*empanada */
+.empanada{
+    width: 250px;
+    height: 250px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color:white;
+    border: solid 1px;
+}
+
+.empanada img{
+width: 100%;
+height: 65%;
+object-fit:cover ;
+}
+
+.empanada .title{
+font-weight: bold;
+}
+
+.empanada .price{
+    text-align: right;
+}
+
+.empanada .columns {
+    max-width: 100%;
+    display: flex;
+}
+.empanada .columns div{
+    width: 50%;
+}
+
+.empanada button{
+    background-color:white;
+    padding: 10px;
+    border: solid 1px;
+    border-radius: 5px;
+    font-weight:bold;
+
+}
+/* Carne Suave */
+.carnesuave{
+    width: 250px;
+    height: 250px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color:white;
+    border: solid 1px;
+}
+
+.carnesuave img{
+width: 100%;
+height: 65%;
+object-fit: fill;
+}
+
+.carnesuave .title{
+font-weight: bold;
+}
+
+.carnesuave .price{
+    text-align: right;
+}
+
+.carnesuave .columns {
+    max-width: 100%;
+    display: flex;
+}
+.carnesuave .columns div{
+    width: 50%;
+}
+
+.carnesuave button{
+    background-color:white;
+    padding: 10px;
+    border: solid 1px;
+    border-radius: 5px;
+    font-weight:bold;
+
+}
+
+/* Sfijas */
+.sfijas{
+    width: 250px;
+    height: 250px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color:white;
+    border: solid 1px;
+}
+
+.sfijas img{
+width: 100%;
+height: 65%;
+object-fit: cover;
+}
+
+.sfijas .title{
+font-weight: bold;
+}
+
+.sfijas .price{
+    text-align: right;
+}
+
+.sfijas .columns {
+    max-width: 100%;
+    display: flex;
+}
+.sfijas .columns div{
+    width: 50%;
+}
+
+.sfijas button{
+    background-color:white;
+    padding: 10px;
+    border: solid 1px;
+    border-radius: 5px;
+    font-weight:bold;
+
+}
+
+/* Queso y cebolla */
+.quesoyceb{
+    width: 250px;
+    height: 250px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color:white;
+    border: solid 1px;
+}
+
+.quesoyceb img{
+width: 100%;
+height: 65%;
+object-fit:cover ;
+}
+
+.quesoyceb .title{
+font-weight: bold;
+}
+
+.quesoyceb .price{
+    text-align: right;
+}
+
+.quesoyceb .columns {
+    max-width: 100%;
+    display: flex;
+}
+.quesoyceb .columns div{
+    width: 50%;
+}
+
+.quesoyceb button{
+    background-color:white;
+    padding: 10px;
+    border: solid 1px;
+    border-radius: 5px;
+    font-weight:bold;
+
+}
+
+
+/* Ternera */
+.ternera{
+    width: 250px;
+    height: 250px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color:white;
+    border: solid 1px;
+}
+
+.ternera img{
+width: 100%;
+height: 65%;
+object-fit:cover ;
+}
+
+.ternera .title{
+font-weight: bold;
+}
+
+.ternera .price{
+    text-align: right;
+}
+
+.ternera .columns {
+    max-width: 100%;
+    display: flex;
+}
+.ternera .columns div{
+    width: 50%;
+}
+
+.ternera button{
+    background-color:white;
+    padding: 10px;
+    border: solid 1px;
+    border-radius: 5px;
+    font-weight:bold;
+
+}
+
+
+/* Verdura */
+.verdura{
+    width: 250px;
+    height: 250px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color:white;
+    border: solid 1px;
+}
+
+.verdura img{
+width: 100%;
+height: 65%;
+object-fit:cover ;
+}
+
+.verdura .title{
+font-weight: bold;
+}
+
+.verdura .price{
+    text-align: right;
+}
+
+.verdura .columns {
+    max-width: 100%;
+    display: flex;
+}
+.verdura .columns div{
+    width: 50%;
+}
+
+.verdura button{
+    background-color:white;
+    padding: 10px;
+    border: solid 1px;
+    border-radius: 5px;
+    font-weight:bold;
+
+}
+
+/* Docena carne */
+.docenaCarne {
+    width: 250px;
+    height: 250px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color:white;
+    border: solid 1px;
+}
+
+.docenaCarne img{
+width: 100%;
+height: 65%;
+object-fit:cover ;
+}
+
+.docenaCarne .title{
+font-weight: bold;
+}
+
+.docenaCarne .price{
+    text-align: right;
+}
+
+.docenaCarne .columns {
+    max-width: 100%;
+    display: flex;
+}
+.docenaCarne .columns div{
+    width: 50%;
+}
+
+.docenaCarne button{
+    background-color:white;
+    padding: 10px;
+    border: solid 1px;
+    border-radius: 5px;
+    font-weight:bold;
+
+}
+
+/* Docena variada */
+.docenaVariada {
+    width: 250px;
+    height: 250px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color:white;
+    border: solid 1px;
+}
+
+.docenaVariada img{
+width: 100%;
+height: 65%;
+object-fit:cover ;
+}
+
+.docenaVariada .title{
+font-weight: bold;
+}
+
+.docenaVariada .price{
+    text-align: right;
+}
+
+.docenaVariada .columns {
+    max-width: 100%;
+    display: flex;
+}
+.docenaVariada .columns div{
+    width: 50%;
+}
+
+.docenaVariada button{
+    background-color:white;
+    padding: 10px;
+    border: solid 1px;
+    border-radius: 5px;
+    font-weight:bold;
+
+}
+
+/* Docena Verdura */
+.docenaVerdura {
+    width: 250px;
+    height: 250px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color:white;
+    border: solid 1px;
+}
+
+.docenaVerdura img{
+width: 100%;
+height: 65%;
+object-fit:cover ;
+}
+
+.docenaVerdura .title{
+font-weight: bold;
+}
+
+.docenaVerdura .price{
+    text-align: right;
+}
+
+.docenaVerdura .columns {
+    max-width: 100%;
+    display: flex;
+}
+.docenaVerdura .columns div{
+    width: 50%;
+}
+
+.docenaVerdura button{
+    background-color:white;
+    padding: 10px;
+    border: solid 1px;
+    border-radius: 5px;
+    font-weight:bold;
+
+}
+
+/* ORDER */
+.input-group{
+    display: block;
+}
+
+.group1 {
+    width: 100%;
+    display: flex;
+}
+
+.group1 div{
+    margin: 8px;
+}
+.group2 {
+    width: 100%;
+    text-align: left;
+    display: flex;
+}
+.group2 div{
+    margin: 8px;
+}
+
+.group3 {
+    width: 100%;
+    text-align: left;
+    display: flex;
+}
+
+.group3 div{
+    margin: 8px;
+}
+.group4 {
+    width: 100%;
+    text-align: left;
+    display: flex;
+}
+
+.group4 div{
+    margin: 8px;
+}
+.group5 {
+    width: 100%;
+    text-align: left;
+    display: flex;
+}
+
+.group5 div{
+    margin: 8px;
+}
+.recuadro{
+    display: flex;
+    justify-content:center;
+    width: 60%;  
+    background-color: rgb(194, 190, 190);
+    border:solid;
+    padding: 30px;
+    margin: auto;
+
+}
+
+.orden{
+   font-size: 1.8em;
+   text-justify: initial;
+}
+
+
+/* FORM */
+/*
+form{ 
+	width:300px;
+	padding:16px;
+	border-radius:10px;
+	margin:auto;
+	background-color:#ccc;
+}
+
+form label{
+	width:72px;
+	font-weight:bold;
+	display:inline-block;
+}
+
+textarea{
+	width:100%;
+	height:100px;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;			
+	margin:8px 0;
+	resize:none;
+	display:block;
+}*/
+
+
+.contacto {
+background-color: rgb(192, 190, 190);
+width: 50%;
+border: medium;
+border-color: black;
+display: inline-block;
+}
+
+.logo_nav{
+    width: 150px;
+    float: left;
+    margin: 50px;
+}
